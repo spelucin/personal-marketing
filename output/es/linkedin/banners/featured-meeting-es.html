@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banner Destacado - Reunión en Español</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 1200px;
+      height: 667px;
+      font-family: 'DM Sans', sans-serif;
+      overflow: hidden;
+    }
+    .banner {
+      width: 1200px;
+      height: 667px;
+      position: relative;
+      background: linear-gradient(135deg, #f4fdff 0%, #eaf6ff 100%);
+      background-image: radial-gradient(circle, rgba(21, 96, 189, 0.035) 1px, transparent 1px);
+      background-size: 24px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 100px;
+      box-sizing: border-box;
+    }
+    .eyebrow {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(21, 96, 189, 0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 20px;
+    }
+    .headline {
+      font-size: 48px;
+      font-weight: 700;
+      color: #1560bd;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .subheadline {
+      font-size: 24px;
+      font-weight: 400;
+      color: rgba(21, 96, 189, 0.8);
+      line-height: 1.3;
+      margin-bottom: 32px;
+    }
+    .cta {
+      font-size: 20px;
+      font-weight: 600;
+      color: #0d4a9e;
+      padding: 14px 36px;
+      background: rgba(21, 96, 189, 0.08);
+      border: 2px solid rgba(21, 96, 189, 0.2);
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .calendar-icon {
+      width: 24px;
+      height: 24px;
+      opacity: 0.7;
+    }
+    .logo {
+      position: absolute;
+      bottom: 40px;
+      right: 60px;
+      width: 60px;
+      height: 60px;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="eyebrow">Consultoría SEO Técnico para Shopify</div>
+    <div class="headline">¿Tu tienda Shopify no rankea?<br>Charlemos.</div>
+    <div class="subheadline">Auditoría técnica, arquitectura de catálogo y optimización de indexación. Sin hacks, sin atajos.</div>
+    <div class="cta">
+      <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0d4a9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+        <line x1="16" y1="2" x2="16" y2="6"></line>
+        <line x1="8" y1="2" x2="8" y2="6"></line>
+        <line x1="3" y1="10" x2="21" y2="10"></line>
+      </svg>
+      Agenda una reunión →
+    </div>
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+        <path d="M 128 192 C 92.654 192 64 220.654 64 256 L 0 256 C 0 185.308 57.308 128 128 128 Z M 256 128 C 256 198.692 198.692 256 128 256 L 128 192 C 163.346 192 192 163.346 192 128 Z M 128 64 C 92.654 64 64 92.654 64 128 L 0 128 C 0 57.308 57.308 0 128 0 Z M 256 0 C 256 70.692 198.692 128 128 128 L 128 64 C 163.346 64 192 35.346 192 0 Z" fill="#1560bd"/>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>

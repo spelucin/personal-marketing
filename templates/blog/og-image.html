@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, height=630">
+  <title>OG Image - Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      width: 1200px;
+      height: 630px;
+      font-family: 'DM Sans', sans-serif;
+      overflow: hidden;
+      background: #0a0d14;
+      position: relative;
+    }
+
+    .gradient-mesh {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.6;
+    }
+
+    .blob-1 {
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, #1560bd 0%, transparent 70%);
+      top: -200px;
+      left: -100px;
+    }
+
+    .blob-2 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, #0d4a9e 0%, transparent 70%);
+      bottom: -150px;
+      right: -100px;
+      opacity: 0.5;
+    }
+
+    .blob-3 {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, #3b82f6 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.3;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(10, 13, 20, 0.7) 0%, rgba(10, 13, 20, 0.3) 50%, rgba(10, 13, 20, 0.6) 100%);
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding: 60px;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 780px;
+    }
+
+    .category {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #60a5fa;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.15;
+      color: #f0f6ff;
+      letter-spacing: -0.02em;
+      margin-bottom: 40px;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(96, 165, 250, 0.3);
+    }
+
+    .author-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .author-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: #e0ecff;
+    }
+
+    .author-domain {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(96, 165, 250, 0.6);
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 60px;
+      right: 60px;
+      width: 40px;
+      height: 40px;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <div id="og-image" data-category="seo-tecnico" data-title="Arquitectura de catalogo para tiendas Shopify con 1000+ productos" data-author="Alex Spelucin">
+    <div class="gradient-mesh">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="overlay"></div>
+
+    <div class="container">
+      <div class="content">
+        <div>
+          <div class="category" id="category-label">SEO Tecnico</div>
+          <h1 class="title" id="title-text">Arquitectura de catalogo para tiendas Shopify con 1000+ productos</h1>
+        </div>
+        <div class="author">
+          <img class="avatar" id="avatar-img" src="" alt="Alex Spelucin">
+          <div class="author-info">
+            <div class="author-name" id="author-name">Alex Spelucin</div>
+            <div class="author-domain">spelucin.pro</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg class="logo" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 128 192 C 92.654 192 64 220.654 64 256 L 0 256 C 0 185.308 57.308 128 128 128 Z M 256 128 C 256 198.692 198.692 256 128 256 L 128 192 C 163.346 192 192 163.346 192 128 Z M 128 64 C 92.654 64 64 92.654 64 128 L 0 128 C 0 57.308 57.308 0 128 0 Z M 256 0 C 256 70.692 198.692 128 128 128 L 128 64 C 163.346 64 192 35.346 192 0 Z" fill="#60a5fa"/>
+    </svg>
+  </div>
+
+  <script>
+    const container = document.getElementById('og-image');
+    const category = container.dataset.category;
+    const title = container.dataset.title;
+    const author = container.dataset.author;
+
+    document.getElementById('title-text').textContent = title;
+    document.getElementById('author-name').textContent = author;
+    
+    const labels = { 
+      'seo-tecnico': 'SEO Tecnico', 
+      'ai-search': 'AI Search / GEO', 
+      'analitica': 'Analitica Digital' 
+    };
+    document.getElementById('category-label').textContent = labels[category] || 'SEO Tecnico';
+  </script>
+</body>
+</html>

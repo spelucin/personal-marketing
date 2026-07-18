@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md"],
+  "references": {
+    "spelucin-pro": {
+      "path": "../spelucin.pro",
+      "description": "Sitio web de referencia para estetica, marca y contenido de Alex Spelucin. Usar para alinear visuales y tono."
+    }
+  },
+  "skills": {
+    "paths": [".opencode/skills"]
+  }
+}

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs binarios (generados desde HTML)
+output/**/*.jpg
+output/**/*.jpeg
+output/**/*.png
+output/**/*.pdf
+
+# Playwright
+.cache/
+test-results/
+playwright-report/

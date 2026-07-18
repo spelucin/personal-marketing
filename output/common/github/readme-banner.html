@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub README Banner - Alex Spelucin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 1500px;
+      height: 500px;
+      overflow: hidden;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .banner {
+      width: 1500px;
+      height: 500px;
+      position: relative;
+      background: linear-gradient(135deg, #f4fdff 0%, #eaf6ff 100%);
+      background-image:
+        radial-gradient(circle, rgba(21, 96, 189, 0.035) 1px, transparent 1px);
+      background-size: 24px 24px;
+      display: flex;
+      align-items: center;
+      padding: 0 100px;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .eyebrow {
+      font-size: 16px;
+      font-weight: 500;
+      color: rgba(21, 96, 189, 0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 64px;
+      font-weight: 700;
+      color: #1560bd;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: 400;
+      color: rgba(21, 96, 189, 0.8);
+      line-height: 1.3;
+      margin-bottom: 32px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 16px;
+    }
+
+    .tag {
+      font-size: 18px;
+      font-weight: 500;
+      color: #0d4a9e;
+      padding: 8px 20px;
+      background: rgba(21, 96, 189, 0.08);
+      border-radius: 6px;
+      border: 1px solid rgba(21, 96, 189, 0.15);
+    }
+
+    .logo {
+      width: 180px;
+      height: 180px;
+      flex-shrink: 0;
+      margin-left: 80px;
+      opacity: 0.9;
+    }
+
+    .logo svg {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="content">
+      <div class="eyebrow">Technical SEO Consultant</div>
+      <div class="name">Alex Spelucin</div>
+      <div class="title">Multiplico el tráfico orgánico de tiendas Shopify<br>con SEO técnico y arquitectura de catálogo</div>
+      <div class="tags">
+        <div class="tag">Shopify</div>
+        <div class="tag">SEO Técnico</div>
+        <div class="tag">Arquitectura</div>
+        <div class="tag">AI Search</div>
+      </div>
+    </div>
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+        <path d="M 128 192 C 92.654 192 64 220.654 64 256 L 0 256 C 0 185.308 57.308 128 128 128 Z M 256 128 C 256 198.692 198.692 256 128 256 L 128 192 C 163.346 192 192 163.346 192 128 Z M 128 64 C 92.654 64 64 92.654 64 128 L 0 128 C 0 57.308 57.308 0 128 0 Z M 256 0 C 256 70.692 198.692 128 128 128 L 128 64 C 163.346 64 192 35.346 192 0 Z" fill="#1560bd"/>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>

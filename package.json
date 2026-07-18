@@ -1,0 +1,15 @@
+{
+  "name": "spelucin.mkt",
+  "version": "1.0.0",
+  "description": "Sistema de marketing personal de **Alex Spelucin**, consultor independiente de SEO tecnico para ecommerce Shopify.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.61.1"
+  }
+}
