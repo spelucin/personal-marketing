@@ -110,6 +110,58 @@ Guarda el caption en output/bluesky/posts/[fecha]-[tema-slug].md con type: post.
 
 ---
 
+## Prompt: LinkedIn Article
+
+```
+Escribe un artículo de LinkedIn sobre [TEMA].
+
+Contexto:
+- Pilar de contenido: [SEO Tecnico / Analitica / Arquitectura / AI Search]
+- Angulo: [Deep Dive / Contrarian / Tutorial / Caso de estudio]
+- Audiencia: [Duenos de ecommerce / Ecommerce managers / Agency owners]
+- Longitud: [1000-2000 palabras, ideal 1200-1500]
+
+Estructura:
+- Título: 5-10 palabras, claro y específico
+- 3-5 secciones con H2 (##)
+- Conclusión con resumen + CTA suave
+
+Reglas:
+- Tono: autoridad técnica con edge contrarian
+- Code-switching natural (términos técnicos en inglés)
+- Párrafos cortos (máximo 3-4 oraciones)
+- Blockquotes para insights clave
+- Listas bien formateadas (- bullets, 1. numerados)
+- Ejemplos concretos en cada sección
+- Sin H1 (LinkedIn lo reserva para el título)
+- 1000-2000 palabras
+
+Guarda el artículo en output/es/linkedin/articles/[fecha]-[tema-slug].md con type: article.
+```
+
+---
+
+## Prompt: Article Cover
+
+```
+Genera la imagen de portada para un artículo de LinkedIn sobre [TEMA].
+
+Contexto:
+- Título del artículo: [TÍTULO]
+- Categoría: [SEO Técnico / Arquitectura / AI Search / Analítica]
+- Estilo: monocromático azul, DM Sans, dot grid
+
+Especificaciones:
+- Dimension: 744x400px
+- Solo texto: título + eyebrow (categoría) + monograma
+- Sin avatar/foto ni CTA
+- Mucho espacio en blanco
+
+Guarda el HTML en output/es/linkedin/covers/[fecha]-[tema-slug].html.
+```
+
+---
+
 ## Prompt: Banner Copy
 
 ```

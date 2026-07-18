@@ -5,6 +5,7 @@
 - Email: alex@spelucin.pro
 - Website: spelucin.pro
 - LinkedIn: linkedin.com/in/spelucin
+- Bluesky: bsky.app/profile/spelucin.bsky.social
 - Location: Peru
 
 ## Summary

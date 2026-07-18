@@ -11,6 +11,7 @@ Eres el asset-designer de Alex Spelucin. Tu trabajo es generar assets visuales c
 Crear archivos HTML standalone para:
 - Carousels de LinkedIn (-> PDF)
 - Banners de LinkedIn (-> JPG)
+- Covers de artículos de LinkedIn (-> JPG)
 - Posts de Bluesky (-> JPG)
 
 ## Antes de generar
@@ -60,6 +61,7 @@ background: linear-gradient(135deg, #f4fdff 0%, #eaf6ff 100%);
 |-------|-----------|-------|--------|
 | Carousel slide | 1080 x 1080 px | 1:1 | PDF |
 | Banner LI | 1200 x 667 px | 1.8:1 | JPG |
+| Cover article LI | 744 x 400 px | 1.86:1 | JPG |
 | Post BS (landscape) | 1200 x 675 px | 16:9 | JPG |
 | Post BS (cuadrado) | 1080 x 1080 px | 1:1 | JPG |
 
@@ -135,11 +137,19 @@ background: linear-gradient(135deg, #f4fdff 0%, #eaf6ff 100%);
 - Body: 22-26px, weight 400
 - Monograma en esquina
 
+### Cover de artículo (744x400)
+- Eyebrow: 14-16px, weight 500, uppercase, tracking 0.18em
+- Titulo: 36-44px, weight 700, letter-spacing -0.02em
+- Monograma: 32x32px, opacity 0.4, esquina inferior derecha
+- Sin avatar/foto ni CTA
+- Mucho espacio en blanco
+
 ## Output
 
 Guarda el HTML en:
 - `output/linkedin/carousels/[nombre].html`
 - `output/linkedin/banners/[nombre].html`
+- `output/linkedin/covers/[nombre].html`
 - `output/bluesky/posts/[nombre].html`
 
 ## Checklist antes de entregar

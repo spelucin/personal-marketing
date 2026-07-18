@@ -14,6 +14,7 @@ spelucin.mkt/
 │   │   ├── spelucin-voice/       # Escribir en la voz de Alex
 │   │   ├── linkedin-carousel/    # Generar carousels HTML -> PDF
 │   │   ├── linkedin-banner/      # Generar banners HTML -> JPG
+│   │   ├── linkedin-article/     # Generar artículos LinkedIn (copy + cover)
 │   │   ├── social-asset/         # Assets genericos (Bluesky)
 │   │   └── content-repurpose/    # Adaptar contenido entre plataformas
 │   │
@@ -53,6 +54,7 @@ spelucin.mkt/
     ├── linkedin/
     │   ├── carousels/            # PDFs
     │   ├── banners/              # JPGs
+    │   ├── covers/               # JPGs (portadas de artículos)
     │   └── posts/                # .md con frontmatter (copy)
     └── bluesky/
         └── posts/                # JPGs
@@ -121,6 +123,9 @@ Genera carousels de LinkedIn como HTML standalone (1080x1080px por slide) para e
 ### linkedin-banner
 Genera banners de LinkedIn como HTML standalone (1200x667px) para exportar a JPG.
 
+### linkedin-article
+Genera artículos de LinkedIn: copy en markdown (1000-2000 palabras) + cover image HTML standalone (744x400px) para exportar a JPG.
+
 ### social-asset
 Genera assets para Bluesky (posts 1200x675px) como HTML standalone para exportar a JPG.
 
@@ -133,7 +138,7 @@ Adapta contenido entre plataformas manteniendo la voz pero ajustando formato y l
 ```yaml
 ---
 platform: linkedin | bluesky
-type: carousel | banner | post | image
+type: carousel | banner | post | image | article
 title: "..."
 topics: [seo-tecnico, arquitectura, analitica, ai-search]
 language: es | en
@@ -170,6 +175,7 @@ output/[plataforma]/[tipo]/YYYY-MM-DD-[tema-slug].pdf  # o .jpg
 
 - **Sitio web**: `../spelucin.pro` (configurado como reference en opencode.json)
 - **LinkedIn**: linkedin.com/in/spelucin
+- **Bluesky**: [@spelucin.bsky.social](https://bsky.app/profile/spelucin.bsky.social)
 - **Knowledge base**: `knowledge/` (perfil, voz, topics, audiencia, productos)
 - **Brand guidelines**: `brand/` (identidad visual, guidelines por plataforma)
 
@@ -179,7 +185,6 @@ output/[plataforma]/[tipo]/YYYY-MM-DD-[tema-slug].pdf  # o .jpg
 2. **Definir productos**: Completar `knowledge/products.md` con productos a vender
 3. **Crear templates HTML**: Generar templates base en `templates/`
 4. **Probar flujo completo**: Generar un post + carousel + banner de prueba
-5. **Abrir canales**: Configurar Bluesky cuando este listo
 
 ## Notas
 

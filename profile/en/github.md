@@ -33,6 +33,10 @@ spelucin.pro
 
 linkedin.com/in/spelucin
 
+## Bluesky
+
+bsky.app/profile/spelucin.bsky.social
+
 ## Background
 
 I started doing technical SEO for enterprise retail. I managed SEO for Plaza Vea, Promart, Oechsle, Real Plaza, and Inkafarma at Intercorp Retail. I optimized Ripley for CyberWow (3.7M sessions in one day). I worked with Scotiabank and Yanbal at Attach Media.

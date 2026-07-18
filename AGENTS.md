@@ -7,6 +7,7 @@ Este repositorio es el sistema de marketing personal de **Alex Spelucin**, consu
 - **Sitio web**: spelucin.pro (repo: `../spelucin.pro`)
 - **Email**: alex@spelucin.pro
 - **LinkedIn**: linkedin.com/in/spelucin
+- **Bluesky**: [@spelucin.bsky.social](https://bsky.app/profile/spelucin.bsky.social)
 - **Objetivo**: Captar clientes de consultoria + vender productos/servicios (ver `knowledge/products.md`)
 - **Idiomas**: Espanol + Ingles
 
@@ -66,7 +67,7 @@ Ahora enfocado en ayudar a tiendas Shopify a multiplicar su tráfico orgánico c
 ```yaml
 ---
 platform: linkedin | bluesky
-type: carousel | banner | post | image
+type: carousel | banner | post | image | article
 title: "..."
 topics: [seo-tecnico, arquitectura, analitica, ai-search]
 language: es | en
@@ -79,6 +80,7 @@ template: nombre-del-template
 ### Assets visuales
 - Carousels: HTML standalone -> exportar a PDF en `output/{idioma}/linkedin/carousels/`
 - Banners: HTML standalone -> exportar a JPG en `output/{idioma}/linkedin/banners/`
+- Article covers: HTML standalone -> exportar a JPG en `output/{idioma}/linkedin/covers/`
 - Posts BS: HTML standalone -> exportar a JPG en `output/{idioma}/bluesky/posts/`
 - Assets sin texto/idioma (logos, fondos): `output/common/{plataforma}/`
 
@@ -135,6 +137,7 @@ const path = require('path');
 - LinkedIn banner post: 1200x667px
 - LinkedIn banner perfil: 1584x396px
 - LinkedIn carousel: 1080x1080px (PDF multi-pagina)
+- LinkedIn article cover: 744x400px
 - Bluesky post: 1200x675px
 
 ## Skills disponibles
@@ -142,6 +145,7 @@ const path = require('path');
 - `spelucin-voice`: Escribir en la voz de Alex
 - `linkedin-carousel`: Generar carousels HTML -> PDF
 - `linkedin-banner`: Generar banners HTML -> JPG
+- `linkedin-article`: Generar artículos de LinkedIn (copy markdown + cover image 744x400)
 - `social-asset`: Generar assets genericos (Bluesky)
 - `content-repurpose`: Adaptar contenido entre plataformas
 

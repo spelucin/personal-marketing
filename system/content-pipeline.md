@@ -113,7 +113,7 @@ IDEACION -> DRAFT -> REVIEW -> ASSET -> SCHEDULE -> PUBLISH -> ANALYZE
 ```yaml
 ---
 platform: linkedin | bluesky
-type: carousel | banner | post | image
+type: carousel | banner | post | image | article
 title: "..."
 topics: [seo-tecnico, arquitectura, analitica, ai-search]
 language: es | en
@@ -154,6 +154,8 @@ Ejemplos:
 - `output/linkedin/carousels/2026-07-05-errores-ga4.pdf`
 - `output/linkedin/banners/2026-07-07-ga4-bigquery.html`
 - `output/linkedin/banners/2026-07-07-ga4-bigquery.jpg`
+- `output/linkedin/covers/2026-07-10-arquitectura-catalogo.html`
+- `output/linkedin/covers/2026-07-10-arquitectura-catalogo.jpg`
 
 ---
 

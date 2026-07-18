@@ -2,12 +2,15 @@
 platform: bluesky
 type: profile
 language: es
-status: draft
+status: active
 created: 2026-01-05
 updated: 2026-07-18
 ---
 
 # Bluesky Profile
+
+## Handle
+[@spelucin.bsky.social](https://bsky.app/profile/spelucin.bsky.social)
 
 ## Display Name
 Alex Spelucin | SEO Tecnico Shopify
