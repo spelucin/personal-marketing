@@ -59,9 +59,7 @@ IDEACION -> DRAFT -> REVIEW -> ASSET -> SCHEDULE -> PUBLISH -> ANALYZE
 **Actividades**:
 - Carousel: HTML -> PDF (Chrome print o Puppeteer)
 - Banner: HTML -> JPG (screenshot o Puppeteer)
-- Thumbnail: HTML -> JPG
-- Post IG: HTML -> JPG
-- Story IG: HTML -> JPG
+- Post BS: HTML -> JPG
 
 ### 6. Schedule
 
@@ -69,7 +67,7 @@ IDEACION -> DRAFT -> REVIEW -> ASSET -> SCHEDULE -> PUBLISH -> ANALYZE
 **Output**: Contenido programado (status: scheduled)
 
 **Actividades**:
-- Copiar copy a plataforma (LinkedIn, YouTube, Instagram)
+- Copiar copy a plataforma (LinkedIn, Bluesky)
 - Subir assets (PDF, JPG)
 - Programar fecha y hora
 - Marcar como `scheduled` en frontmatter
@@ -114,8 +112,8 @@ IDEACION -> DRAFT -> REVIEW -> ASSET -> SCHEDULE -> PUBLISH -> ANALYZE
 
 ```yaml
 ---
-platform: linkedin | youtube | instagram
-type: carousel | banner | post | thumbnail | story | reel
+platform: linkedin | bluesky
+type: carousel | banner | post | image
 title: "..."
 topics: [seo-tecnico, arquitectura, analitica, ai-search]
 language: es | en

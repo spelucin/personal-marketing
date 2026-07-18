@@ -43,37 +43,12 @@ Este documento explica como generar assets visuales (carousels, banners, thumbna
 
 ---
 
-### YouTube
+### Bluesky
 
-#### Thumbnail (JPG)
-- **Dimension**: 1280 x 720 px (16:9)
-- **Template**: `templates/youtube/thumbnail/`
-- **Output**: `output/youtube/thumbnails/`
-- **Formato**: HTML standalone -> JPG
-- **Skill**: `social-asset`
-
----
-
-### Instagram
-
-#### Post cuadrado (JPG)
-- **Dimension**: 1080 x 1080 px (1:1)
-- **Template**: `templates/instagram/post/`
-- **Output**: `output/instagram/posts/`
-- **Formato**: HTML standalone -> JPG
-- **Skill**: `social-asset`
-
-#### Post vertical (JPG)
-- **Dimension**: 1080 x 1350 px (4:5)
-- **Template**: `templates/instagram/post/`
-- **Output**: `output/instagram/posts/`
-- **Formato**: HTML standalone -> JPG
-- **Skill**: `social-asset`
-
-#### Story (JPG)
-- **Dimension**: 1080 x 1920 px (9:16)
-- **Template**: `templates/instagram/story/`
-- **Output**: `output/instagram/stories/`
+#### Post image (JPG)
+- **Dimension**: 1200 x 675 px (16:9 landscape) o 1080x1080 px (1:1)
+- **Template**: `templates/bluesky/post/`
+- **Output**: `output/bluesky/posts/`
 - **Formato**: HTML standalone -> JPG
 - **Skill**: `social-asset`
 
@@ -274,24 +249,10 @@ const puppeteer = require('puppeteer');
 - [ ] Maximo 2-3 lineas de texto
 - [ ] Monograma en esquina
 
-### Thumbnail especifico
-- [ ] Dimension: 1280x720px
-- [ ] Titulo grande: 64-80px
-- [ ] Maximo 4-5 palabras
-- [ ] Contraste alto
-- [ ] Foto de Alex opcional
-
-### Post IG especifico
-- [ ] Dimension: 1080x1080px o 1080x1350px
+### Post Bluesky especifico
+- [ ] Dimension: 1200x675px (landscape) o 1080x1080px (cuadrado)
 - [ ] Texto legible en mobile
-- [ ] @spelucin en esquina
 - [ ] Monograma en esquina
-
-### Story IG especifico
-- [ ] Dimension: 1080x1920px
-- [ ] Zona segura: 250px arriba y abajo
-- [ ] Texto grande y legible
-- [ ] @spelucin visible
 
 ---
 
@@ -302,7 +263,7 @@ const puppeteer = require('puppeteer');
 - **Skills**:
   - `linkedin-carousel` (carousels)
   - `linkedin-banner` (banners)
-  - `social-asset` (thumbnails, posts, stories)
+  - `social-asset` (posts)
 
 ### Para generar copy
 - **Agent**: `content-writer`
@@ -317,6 +278,5 @@ const puppeteer = require('puppeteer');
 
 - `brand/visual-identity.md` - Paleta, tipografia, texturas
 - `brand/linkedin-guidelines.md` - Dimensiones y reglas LinkedIn
-- `brand/youtube-guidelines.md` - Dimensiones y reglas YouTube
-- `brand/instagram-guidelines.md` - Dimensiones y reglas Instagram
+- `brand/bluesky-guidelines.md` - Dimensiones y reglas Bluesky
 - `templates/` - Templates HTML base por tipo de asset

@@ -65,8 +65,8 @@ Ahora enfocado en ayudar a tiendas Shopify a multiplicar su tráfico orgánico c
 ### Copy/posts (.md con frontmatter)
 ```yaml
 ---
-platform: linkedin | youtube | instagram
-type: carousel | banner | post | thumbnail | story
+platform: linkedin | bluesky
+type: carousel | banner | post | image
 title: "..."
 topics: [seo-tecnico, arquitectura, analitica, ai-search]
 language: es | en
@@ -79,9 +79,7 @@ template: nombre-del-template
 ### Assets visuales
 - Carousels: HTML standalone -> exportar a PDF en `output/{idioma}/linkedin/carousels/`
 - Banners: HTML standalone -> exportar a JPG en `output/{idioma}/linkedin/banners/`
-- Thumbnails: HTML standalone -> exportar a JPG en `output/{idioma}/youtube/thumbnails/`
-- Posts IG: HTML standalone -> exportar a JPG en `output/{idioma}/instagram/posts/`
-- Stories IG: HTML standalone -> exportar a JPG en `output/{idioma}/instagram/stories/`
+- Posts BS: HTML standalone -> exportar a JPG en `output/{idioma}/bluesky/posts/`
 - Assets sin texto/idioma (logos, fondos): `output/common/{plataforma}/`
 
 ### Organización por idioma
@@ -137,16 +135,14 @@ const path = require('path');
 - LinkedIn banner post: 1200x667px
 - LinkedIn banner perfil: 1584x396px
 - LinkedIn carousel: 1080x1080px (PDF multi-pagina)
-- YouTube thumbnail: 1280x720px
-- Instagram post: 1080x1080px
-- Instagram story: 1080x1920px
+- Bluesky post: 1200x675px
 
 ## Skills disponibles
 
 - `spelucin-voice`: Escribir en la voz de Alex
 - `linkedin-carousel`: Generar carousels HTML -> PDF
 - `linkedin-banner`: Generar banners HTML -> JPG
-- `social-asset`: Generar assets genericos (YT, IG)
+- `social-asset`: Generar assets genericos (Bluesky)
 - `content-repurpose`: Adaptar contenido entre plataformas
 
 ## Agents disponibles

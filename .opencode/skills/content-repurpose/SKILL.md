@@ -1,6 +1,6 @@
 ---
 name: content-repurpose
-description: Use when adapting content between platforms (e.g., LinkedIn post to Instagram, carousel to YouTube script). Maintains voice while adjusting format and length for each platform.
+description: Use when adapting content between platforms (e.g., LinkedIn post to Bluesky, carousel to blog post). Maintains voice while adjusting format and length for each platform.
 ---
 
 # Content Repurpose Skill
@@ -12,8 +12,7 @@ Adapta contenido entre plataformas manteniendo la voz de Alex pero ajustando for
 1. Lee `knowledge/voice-guide.md` para mantener la voz
 2. Lee las guidelines de la plataforma origen y destino:
    - `brand/linkedin-guidelines.md`
-   - `brand/youtube-guidelines.md`
-   - `brand/instagram-guidelines.md`
+   - `brand/bluesky-guidelines.md`
 
 ## Principios de adaptacion
 
@@ -32,102 +31,76 @@ Adapta contenido entre plataformas manteniendo la voz de Alex pero ajustando for
 
 ## Flujos de adaptacion
 
-### LinkedIn Post -> Instagram Post
+### LinkedIn Post -> Bluesky Post
 
 #### LinkedIn (original)
 - Texto largo, parrafos cortos
 - 1-2 hashtags
 - CTA: "Comenta X" o link en primer comentario
 
-#### Instagram (adaptacion)
-- **Caption**: Acortar a lo esencial, primera linea critica (visible antes de "ver mas")
-- **Visual**: Crear imagen o carousel que complemente el texto
-- **Hashtags**: 3-5 hashtags relevantes
-- **CTA**: "Guarda este post", "Comparte", "Link en bio"
+#### Bluesky (adaptacion)
+- **Post**: Condensar a max 300 chars, hook directo
+- **Imagen**: Crear visual complementario si aplica
+- **Sin hashtags**: Bluesky no usa hashtags de la misma forma
+- **CTA**: Link directo o pregunta
 
 #### Checklist
-- [ ] Caption adaptada a IG (primera linea hook)
-- [ ] Visual creado (post o carousel)
-- [ ] 3-5 hashtags anadidos
-- [ ] CTA ajustado a IG
+- [ ] Post condensado a max 300 chars
+- [ ] Hook directo en primera linea
+- [ ] Sin hashtags innecesarios
+- [ ] CTA claro
 
 ---
 
-### LinkedIn Carousel -> YouTube Script
+### LinkedIn Carousel -> Bluesky Thread
 
 #### LinkedIn (original)
 - 7-10 slides, una idea por slide
 - Texto conciso, visual complementa
 - 500-800 palabras total
 
-#### YouTube (adaptacion)
-- **Intro** (15-30s): Hook + promesa + quien eres
-- **Desarrollo** (8-15min): Expandir cada slide en seccion
-- **Outro** (30-60s): Resumen + CTA + suscribete
+#### Bluesky (adaptacion)
+- **Thread**: Hilo de 3-5 posts, cada uno 300 chars max
+- **Cada post**: Idea principal + contexto breve
+- **Primer post**: Hook + contexto del hilo
+- **Ultimo post**: Resumen + CTA
 
-#### Estructura de script
+#### Estructura de thread
 ```
-[INTRO - 15-30s]
-Hook provocativo
-Promesa: "En este video vas a aprender..."
-Brief intro: "Soy Alex Spelucin, consultor de SEO tecnico para Shopify"
+[POST 1 - Hook + contexto]
+"I'm writing about [topic] in a thread..."
 
-[DESARROLLO - 8-15min]
-Seccion 1: [Tema del slide 1]
-- Explicacion expandida
-- Ejemplos concretos
-- Screenshots o diagrams
+[POST 2-N]
+Una idea principal por post
 
-Seccion 2: [Tema del slide 2]
-...
-
-[OUTRO - 30-60s]
-Resumen de takeaways
-CTA: "Si te sirvio, suscribete para mas"
-Link a recurso o servicio
+[POST ULTIMO - CTA]
+Resumen + link o pregunta
 ```
 
 #### Checklist
-- [ ] Intro con hook + promesa + intro personal
-- [ ] Cada slide expandido en seccion de video
-- [ ] Lenguaje conversacional (no leido)
-- [ ] Transiciones entre secciones
-- [ ] Outro con resumen + CTA + suscripcion
-- [ ] Duracion total: 8-15 minutos
+- [ ] Hilo de 3-5 posts
+- [ ] Cada post max 300 chars
+- [ ] Primera idea clara en el hook
+- [ ] CTA en el ultimo post
 
 ---
 
-### YouTube Video -> LinkedIn Post
+### Bluesky Post -> LinkedIn Post
 
-#### YouTube (original)
-- 8-15 minutos de video
-- Script completo con intro, desarrollo, outro
-- Screenshots, diagrams, talking head
+#### Bluesky (original)
+- Max 300 chars
+- Texto conciso
+- Links y referencias
 
 #### LinkedIn (adaptacion)
-- **Post de texto**: Takeaway principal + 2-3 puntos clave
-- **Carousel**: Extraer 5-7 slides con ideas principales
-- **Banner**: Metrica o quote del video
-
-#### Opcion A: Post de texto
-```
-[Hook provocativo basado en el video]
-
-[2-3 parrafos con los puntos clave]
-
-[CTA: "Video completo en mi canal" o "Comenta X para el link"]
-```
-
-#### Opcion B: Carousel
-- Slide 1: Hook + titulo del video
-- Slides 2-6: Una idea principal por slide
-- Slide 7: CTA + "Video completo en YouTube"
+- **Post**: Expandir a formato completo
+- **Estructura**: Hook -> Problema -> Insight -> CTA
+- **Hashtags**: 1-2 maximo
 
 #### Checklist
-- [ ] Hook adaptado a LinkedIn
-- [ ] Contenido condensado a lo esencial
-- [ ] CTA apropiado para LinkedIn
-- [ ] Si es carousel: 5-7 slides maximo
+- [ ] Contenido expandido
+- [ ] Estructura de LinkedIn aplicada
+- [ ] Hashtags reducidos
 
 ---
 
@@ -156,34 +129,14 @@ Link a recurso o servicio
 
 ---
 
-### Instagram Post -> LinkedIn Post
-
-#### Instagram (original)
-- Caption corta (2200 chars max)
-- Visual dominante
-- 3-5 hashtags
-
-#### LinkedIn (adaptacion)
-- **Texto**: Expandir caption a post completo
-- **Estructura**: Hook + problema + insight + CTA
-- **Hashtags**: Reducir a 1-2 maximo
-
-#### Checklist
-- [ ] Caption expandida a post completo
-- [ ] Estructura de LinkedIn (hook, problema, insight, CTA)
-- [ ] Hashtags reducidos a 1-2
-
----
-
 ## Tabla de conversion rapida
 
-| De -> A | Longitud | Formato | CTA | Hashtags |
-|---------|----------|---------|-----|----------|
-| LI Post -> IG Post | Acortar | Imagen + caption | "Guarda/Comparte" | 3-5 |
-| LI Carousel -> YT Script | Expandir | Video 8-15min | "Suscribete" | N/A |
-| YT Video -> LI Post | Condensar | Texto o carousel | "Comenta X" | 1-2 |
-| Blog -> LI Carousel | Extraer ideas | 7-10 slides | "Link en bio" | 0-1 |
-| IG Post -> LI Post | Expandir | Texto completo | "Charlamos?" | 1-2 |
+| De -> A | Longitud | Formato | CTA |
+|---------|----------|---------|-----|
+| LI Post -> BS Post | Condensar | Texto + imagen | Link directo |
+| LI Carousel -> BS Thread | Expandir a hilo | 3-5 posts | Link al final |
+| BS Post -> LI Post | Expandir | Texto completo | Charlamos? |
+| Blog -> LI Carousel | Extraer ideas | 7-10 slides | Link en bio |
 
 ---
 
@@ -192,9 +145,8 @@ Link a recurso o servicio
 - [ ] Voz mantenida (tono, estilo, frases firma)
 - [ ] Mensaje central preservado
 - [ ] Longitud ajustada a plataforma
-- [ ] Formato adaptado (texto, visual, video)
+- [ ] Formato adaptado (texto, visual)
 - [ ] Estructura segun convencion de plataforma
-- [ ] Hashtags correctos para plataforma
 - [ ] CTA apropiado para canal
 - [ ] Datos y cifras intactos
 - [ ] Sin perder el edge contrarian

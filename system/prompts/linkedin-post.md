@@ -81,7 +81,7 @@ Reglas:
 - Screenshots o diagrams sugeridos
 - Tono: autoridad tecnica con edge contrarian
 
-Guarda el script en output/youtube/posts/[fecha]-[tema-slug].md con type: video-script.
+Guarda el script en output/linkedin/posts/[fecha]-[tema-slug].md con type: carousel-script.
 ```
 
 ---
@@ -105,7 +105,7 @@ Reglas:
 - Code-switching natural
 - Tono: autoridad tecnica con edge contrarian
 
-Guarda el caption en output/instagram/posts/[fecha]-[tema-slug].md con type: caption.
+Guarda el caption en output/bluesky/posts/[fecha]-[tema-slug].md con type: post.
 ```
 
 ---
@@ -161,14 +161,14 @@ Genera 5 ideas de contenido sobre [PILAR DE CONTENIDO] para [PLATAFORMA].
 
 Contexto:
 - Pilar: [SEO Tecnico / Analitica / Arquitectura / AI Search]
-- Plataforma: [LinkedIn / YouTube / Instagram]
+- Plataforma: [LinkedIn / Bluesky]
 - Audiencia: [Duenos de ecommerce / Ecommerce managers / Agency owners]
 - Angulo: [Provocativo / Educativo / Data-driven / Herramienta]
 
 Para cada idea incluye:
 - Titulo tentativo
 - Angulo especifico
-- Tipo de contenido (post, carousel, video, etc.)
+- Tipo de contenido (post, carousel, thread, etc.)
 - CTA sugerido
 - Por que funcionaria
 
@@ -183,7 +183,7 @@ Guarda las ideas en system/content-calendar.md bajo "Banco de ideas".
 Planifica el calendario editorial para la semana [FECHA].
 
 Contexto:
-- Plataformas activas: [LinkedIn / YouTube / Instagram]
+- Plataformas activas: [LinkedIn / Bluesky]
 - Pilares a cubrir: [SEO Tecnico / Analitica / Arquitectura / AI Search]
 - Frecuencia objetivo: [X posts por semana por plataforma]
 
@@ -205,14 +205,14 @@ Actualiza system/content-calendar.md con el calendario detallado.
 
 ### Con agents
 Estos prompts pueden usarse directamente con los agents:
-- `content-writer`: Para prompts de copy (LinkedIn post, carousel script, Instagram caption, banner copy)
+- `content-writer`: Para prompts de copy (LinkedIn post, carousel script, banner copy)
 - `content-strategist`: Para prompts de planificacion (content idea, content calendar)
 
 ### Con skills
 - `spelucin-voice`: Se activa automaticamente al escribir copy
 - `linkedin-carousel`: Para generar HTML de carousels
 - `linkedin-banner`: Para generar HTML de banners
-- `social-asset`: Para generar HTML de thumbnails, posts, stories
+- `social-asset`: Para generar HTML de posts
 - `content-repurpose`: Para adaptar contenido entre plataformas
 
 ### Ejemplo de flujo completo

@@ -14,7 +14,7 @@ spelucin.mkt/
 │   │   ├── spelucin-voice/       # Escribir en la voz de Alex
 │   │   ├── linkedin-carousel/    # Generar carousels HTML -> PDF
 │   │   ├── linkedin-banner/      # Generar banners HTML -> JPG
-│   │   ├── social-asset/         # Assets genericos (YT, IG)
+│   │   ├── social-asset/         # Assets genericos (Bluesky)
 │   │   └── content-repurpose/    # Adaptar contenido entre plataformas
 │   │
 │   └── agents/                   # Agents personalizados
@@ -32,19 +32,15 @@ spelucin.mkt/
 ├── brand/                        # Brand guidelines
 │   ├── visual-identity.md        # Paleta, tipografia, texturas, logo
 │   ├── linkedin-guidelines.md    # Dimensiones, reglas LinkedIn
-│   ├── youtube-guidelines.md     # Dimensiones, reglas YouTube
-│   └── instagram-guidelines.md   # Dimensiones, reglas Instagram
+│   └── bluesky-guidelines.md     # Dimensiones, reglas Bluesky
 │
 ├── templates/                    # Templates HTML base
 │   ├── linkedin/
 │   │   ├── carousel/             # Templates de carousels
 │   │   ├── banner/               # Templates de banners
 │   │   └── post-structures.md    # Estructuras de copy probadas
-│   ├── youtube/
-│   │   └── thumbnail/            # Templates de thumbnails
-│   └── instagram/
-│       ├── post/                 # Templates de posts
-│       └── story/                # Templates de stories
+│   └── bluesky/
+│       └── post/                 # Templates de posts
 │
 ├── system/                       # Sistema de generacion
 │   ├── content-pipeline.md       # Flujo de trabajo completo
@@ -58,11 +54,8 @@ spelucin.mkt/
     │   ├── carousels/            # PDFs
     │   ├── banners/              # JPGs
     │   └── posts/                # .md con frontmatter (copy)
-    ├── youtube/
-    │   └── thumbnails/           # JPGs
-    └── instagram/
-        ├── posts/                # JPGs
-        └── stories/              # JPGs
+    └── bluesky/
+        └── posts/                # JPGs
 ```
 
 ## Uso rapido
@@ -129,7 +122,7 @@ Genera carousels de LinkedIn como HTML standalone (1080x1080px por slide) para e
 Genera banners de LinkedIn como HTML standalone (1200x667px) para exportar a JPG.
 
 ### social-asset
-Genera assets para YouTube (thumbnails 1280x720px) e Instagram (posts 1080x1080px, stories 1080x1920px) como HTML standalone para exportar a JPG.
+Genera assets para Bluesky (posts 1200x675px) como HTML standalone para exportar a JPG.
 
 ### content-repurpose
 Adapta contenido entre plataformas manteniendo la voz pero ajustando formato y longitud.
@@ -139,8 +132,8 @@ Adapta contenido entre plataformas manteniendo la voz pero ajustando formato y l
 ### Frontmatter de posts (.md)
 ```yaml
 ---
-platform: linkedin | youtube | instagram
-type: carousel | banner | post | thumbnail | story
+platform: linkedin | bluesky
+type: carousel | banner | post | image
 title: "..."
 topics: [seo-tecnico, arquitectura, analitica, ai-search]
 language: es | en
@@ -186,7 +179,7 @@ output/[plataforma]/[tipo]/YYYY-MM-DD-[tema-slug].pdf  # o .jpg
 2. **Definir productos**: Completar `knowledge/products.md` con productos a vender
 3. **Crear templates HTML**: Generar templates base en `templates/`
 4. **Probar flujo completo**: Generar un post + carousel + banner de prueba
-5. **Abrir canales**: Configurar YouTube e Instagram cuando este listo
+5. **Abrir canales**: Configurar Bluesky cuando este listo
 
 ## Notas
 
