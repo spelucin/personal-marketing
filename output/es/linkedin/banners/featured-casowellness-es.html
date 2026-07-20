@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured - Caso Wellness PEMF</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1200px;
+      height: 667px;
+      font-family: 'DM Sans', sans-serif;
+      overflow: hidden;
+      background: #f4fdff;
+    }
+    .banner {
+      width: 1200px;
+      height: 667px;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* Left panel */
+    .panel-left {
+      width: 55%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 0 60px 80px;
+      position: relative;
+      z-index: 2;
+    }
+    .panel-left::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 15% 40%, rgba(21,96,189,0.06), transparent 55%),
+        radial-gradient(circle, rgba(21,96,189,0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 24px 24px;
+      z-index: -1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .eyebrow-line {
+      width: 32px;
+      height: 2px;
+      background: #1560bd;
+      border-radius: 1px;
+    }
+    .eyebrow-text {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1560bd;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    .client-tag {
+      font-size: 15px;
+      font-weight: 500;
+      color: rgba(13,31,60,0.45);
+      margin-bottom: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .headline {
+      font-size: 48px;
+      font-weight: 700;
+      color: #0d1f3c;
+      letter-spacing: -0.03em;
+      line-height: 1.08;
+      margin-bottom: 16px;
+      max-width: 16ch;
+    }
+    .headline em {
+      font-style: normal;
+      color: #1560bd;
+    }
+
+    .summary {
+      font-size: 18px;
+      font-weight: 400;
+      color: rgba(13,31,60,0.5);
+      line-height: 1.5;
+      margin-bottom: 32px;
+      max-width: 40ch;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 17px;
+      font-weight: 600;
+      color: #ffffff;
+      padding: 16px 36px;
+      background: #1560bd;
+      border-radius: 9999px;
+      width: fit-content;
+      box-shadow: 0 4px 20px rgba(21,96,189,0.3), 0 0 0 1px rgba(21,96,189,0.1);
+      letter-spacing: -0.01em;
+    }
+
+    /* Right panel - metrics */
+    .panel-right {
+      width: 45%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 60px 60px 40px;
+      position: relative;
+      z-index: 2;
+    }
+    .panel-right::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 80% 50%, rgba(21,96,189,0.04), transparent 60%);
+      z-index: -1;
+    }
+
+    .metrics {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .metric {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding-left: 20px;
+      border-left: 2px solid rgba(21,96,189,0.12);
+    }
+    .metric-value {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 56px;
+      font-weight: 300;
+      color: #1560bd;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .metric-label {
+      font-size: 16px;
+      font-weight: 500;
+      color: rgba(13,31,60,0.5);
+      letter-spacing: 0.01em;
+    }
+
+    /* Divider */
+    .divider {
+      position: absolute;
+      left: 55%;
+      top: 12%;
+      bottom: 12%;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(21,96,189,0.1), transparent);
+      z-index: 3;
+    }
+
+    /* Logo watermark */
+    .logo {
+      position: absolute;
+      bottom: 36px;
+      right: 48px;
+      width: 48px;
+      height: 48px;
+      opacity: 0.12;
+      z-index: 2;
+    }
+
+    /* Decorative arc */
+    .arc {
+      position: absolute;
+      top: -15%;
+      right: -8%;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(21,96,189,0.06);
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="panel-left">
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Caso de Estudio</span>
+      </div>
+      <div class="client-tag">Wellness Grounding y PEMF Shop · Shopify · EE.UU.</div>
+      <div class="headline">Duplicamos la <em>visibilidad</em> en Google</div>
+      <div class="summary">Corrección de contenido duplicado y schema de producto mejoró clics, impresiones y AOV.</div>
+      <div class="cta">Ver caso de estudio →</div>
+    </div>
+    <div class="divider"></div>
+    <div class="panel-right">
+      <div class="metrics">
+        <div class="metric">
+          <div class="metric-value">+26.5%</div>
+          <div class="metric-label">Impresiones orgánicas</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">+14.7%</div>
+          <div class="metric-label">Clics orgánicos</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">+15.1%</div>
+          <div class="metric-label">AOV del canal orgánico</div>
+        </div>
+      </div>
+    </div>
+    <div class="arc"></div>
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+        <path d="M 128 192 C 92.654 192 64 220.654 64 256 L 0 256 C 0 185.308 57.308 128 128 128 Z M 256 128 C 256 198.692 198.692 256 128 256 L 128 192 C 163.346 192 192 163.346 192 128 Z M 128 64 C 92.654 64 64 92.654 64 128 L 0 128 C 0 57.308 57.308 0 128 0 Z M 256 0 C 256 70.692 198.692 128 128 128 L 128 64 C 163.346 64 192 35.346 192 0 Z" fill="#1560bd"/>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>

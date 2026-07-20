@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured - Agenda una reunión</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1200px;
+      height: 667px;
+      font-family: 'DM Sans', sans-serif;
+      overflow: hidden;
+      background: #f4fdff;
+    }
+    .banner {
+      width: 1200px;
+      height: 667px;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* Left panel */
+    .panel-left {
+      width: 58%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 0 60px 80px;
+      position: relative;
+      z-index: 2;
+    }
+    .panel-left::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 20% 30%, rgba(21,96,189,0.06), transparent 60%),
+        radial-gradient(circle, rgba(21,96,189,0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 24px 24px;
+      z-index: -1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .eyebrow-line {
+      width: 32px;
+      height: 2px;
+      background: #1560bd;
+      border-radius: 1px;
+    }
+    .eyebrow-text {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1560bd;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    .headline {
+      font-size: 58px;
+      font-weight: 700;
+      color: #0d1f3c;
+      letter-spacing: -0.03em;
+      line-height: 1.06;
+      margin-bottom: 20px;
+      max-width: 14ch;
+    }
+    .headline em {
+      font-style: normal;
+      color: #1560bd;
+    }
+
+    .subheadline {
+      font-size: 20px;
+      font-weight: 400;
+      color: rgba(13,31,60,0.55);
+      line-height: 1.5;
+      margin-bottom: 36px;
+      max-width: 42ch;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 17px;
+      font-weight: 600;
+      color: #ffffff;
+      padding: 16px 36px;
+      background: #1560bd;
+      border-radius: 9999px;
+      width: fit-content;
+      box-shadow: 0 4px 20px rgba(21,96,189,0.3), 0 0 0 1px rgba(21,96,189,0.1);
+      letter-spacing: -0.01em;
+    }
+    .cta svg {
+      width: 20px;
+      height: 20px;
+      opacity: 0.9;
+    }
+
+    /* Right panel - geometric accent */
+    .panel-right {
+      width: 42%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .panel-right::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -30%;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle at center, rgba(21,96,189,0.08) 0%, rgba(21,96,189,0.03) 40%, transparent 70%);
+    }
+    .panel-right::after {
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      right: 10%;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle at center, rgba(21,96,189,0.05) 0%, transparent 60%);
+    }
+
+    /* Large logo watermark */
+    .logo-watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 320px;
+      height: 320px;
+      opacity: 0.07;
+      z-index: 1;
+    }
+
+    /* Decorative arc */
+    .arc {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 480px;
+      height: 480px;
+      border-radius: 50%;
+      border: 2px solid rgba(21,96,189,0.08);
+      z-index: 1;
+    }
+    .arc-inner {
+      position: absolute;
+      top: 50%;
+      right: 40px;
+      transform: translateY(-50%);
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(21,96,189,0.06);
+      z-index: 1;
+    }
+
+    /* Dot accent on right */
+    .dot-accent {
+      position: absolute;
+      bottom: 80px;
+      right: 80px;
+      display: grid;
+      grid-template-columns: repeat(3, 6px);
+      gap: 10px;
+      z-index: 2;
+    }
+    .dot-accent span {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(21,96,189,0.15);
+    }
+
+    /* Divider line */
+    .divider {
+      position: absolute;
+      left: 58%;
+      top: 15%;
+      bottom: 15%;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(21,96,189,0.12), transparent);
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="panel-left">
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">SEO Técnico para Shopify</span>
+      </div>
+      <div class="headline">Hablemos de por qué <em>tu tienda</em> no rankea.</div>
+      <div class="subheadline">30 minutos para revisar tu situación técnica y ver si hay una oportunidad real de crecimiento orgánico.</div>
+      <div class="cta">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Agenda una reunión conmigo
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="panel-right">
+      <div class="arc"></div>
+      <div class="arc-inner"></div>
+      <div class="logo-watermark">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+          <path d="M 128 192 C 92.654 192 64 220.654 64 256 L 0 256 C 0 185.308 57.308 128 128 128 Z M 256 128 C 256 198.692 198.692 256 128 256 L 128 192 C 163.346 192 192 163.346 192 128 Z M 128 64 C 92.654 64 64 92.654 64 128 L 0 128 C 0 57.308 57.308 0 128 0 Z M 256 0 C 256 70.692 198.692 128 128 128 L 128 64 C 163.346 64 192 35.346 192 0 Z" fill="#1560bd"/>
+        </svg>
+      </div>
+      <div class="dot-accent">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
