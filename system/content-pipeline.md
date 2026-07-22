@@ -67,7 +67,7 @@ IDEACION -> DRAFT -> REVIEW -> ASSET -> SCHEDULE -> PUBLISH -> ANALYZE
 **Output**: Contenido programado (status: scheduled)
 
 **Actividades**:
-- Copiar copy a plataforma (LinkedIn, Bluesky)
+- Copiar copy a plataforma (LinkedIn)
 - Subir assets (PDF, JPG)
 - Programar fecha y hora
 - Marcar como `scheduled` en frontmatter
@@ -112,7 +112,7 @@ IDEACION -> DRAFT -> REVIEW -> ASSET -> SCHEDULE -> PUBLISH -> ANALYZE
 
 ```yaml
 ---
-platform: linkedin | bluesky
+platform: linkedin
 type: carousel | banner | post | image | article
 title: "..."
 topics: [seo-tecnico, arquitectura, analitica, ai-search]

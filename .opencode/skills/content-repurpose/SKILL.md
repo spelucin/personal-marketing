@@ -1,6 +1,6 @@
 ---
 name: content-repurpose
-description: Use when adapting content between platforms (e.g., LinkedIn post to Bluesky, carousel to blog post). Maintains voice while adjusting format and length for each platform.
+description: Use when adapting content between platforms (e.g., LinkedIn post to blog post, carousel to article). Maintains voice while adjusting format and length for each platform.
 ---
 
 # Content Repurpose Skill
@@ -12,7 +12,6 @@ Adapta contenido entre plataformas manteniendo la voz de Alex pero ajustando for
 1. Lee `knowledge/voice-guide.md` para mantener la voz
 2. Lee las guidelines de la plataforma origen y destino:
    - `brand/linkedin-guidelines.md`
-   - `brand/bluesky-guidelines.md`
 
 ## Principios de adaptacion
 
@@ -31,80 +30,26 @@ Adapta contenido entre plataformas manteniendo la voz de Alex pero ajustando for
 
 ## Flujos de adaptacion
 
-### LinkedIn Post -> Bluesky Post
+### LinkedIn Post -> Blog Post
 
 #### LinkedIn (original)
 - Texto largo, parrafos cortos
 - 1-2 hashtags
 - CTA: "Comenta X" o link en primer comentario
 
-#### Bluesky (adaptacion)
-- **Post**: Condensar a max 300 chars, hook directo
-- **Imagen**: Crear visual complementario si aplica
-- **Sin hashtags**: Bluesky no usa hashtags de la misma forma
-- **CTA**: Link directo o pregunta
-
-#### Checklist
-- [ ] Post condensado a max 300 chars
-- [ ] Hook directo en primera linea
-- [ ] Sin hashtags innecesarios
-- [ ] CTA claro
-
----
-
-### LinkedIn Carousel -> Bluesky Thread
-
-#### LinkedIn (original)
-- 7-10 slides, una idea por slide
-- Texto conciso, visual complementa
-- 500-800 palabras total
-
-#### Bluesky (adaptacion)
-- **Thread**: Hilo de 3-5 posts, cada uno 300 chars max
-- **Cada post**: Idea principal + contexto breve
-- **Primer post**: Hook + contexto del hilo
-- **Ultimo post**: Resumen + CTA
-
-#### Estructura de thread
-```
-[POST 1 - Hook + contexto]
-"I'm writing about [topic] in a thread..."
-
-[POST 2-N]
-Una idea principal por post
-
-[POST ULTIMO - CTA]
-Resumen + link o pregunta
-```
-
-#### Checklist
-- [ ] Hilo de 3-5 posts
-- [ ] Cada post max 300 chars
-- [ ] Primera idea clara en el hook
-- [ ] CTA en el ultimo post
-
----
-
-### Bluesky Post -> LinkedIn Post
-
-#### Bluesky (original)
-- Max 300 chars
-- Texto conciso
-- Links y referencias
-
-#### LinkedIn (adaptacion)
-- **Post**: Expandir a formato completo
+#### Blog (adaptacion)
+- **Post**: Expandir a formato largo con intro, secciones y conclusion
 - **Estructura**: Hook -> Problema -> Insight -> CTA
-- **Hashtags**: 1-2 maximo
+- **SEO**: Optimizar para busqueda organica
 
 #### Checklist
-- [ ] Contenido expandido
-- [ ] Estructura de LinkedIn aplicada
-- [ ] Hashtags reducidos
+- [ ] Contenido expandido a formato largo
+- [ ] Estructura de blog aplicada (intro, secciones, conclusion)
+- [ ] SEO optimizado
 
 ---
 
-### Blog Post -> LinkedIn Carousel
+### LinkedIn Carousel -> Blog Post
 
 #### Blog (original)
 - 1500-3000 palabras
@@ -133,9 +78,8 @@ Resumen + link o pregunta
 
 | De -> A | Longitud | Formato | CTA |
 |---------|----------|---------|-----|
-| LI Post -> BS Post | Condensar | Texto + imagen | Link directo |
-| LI Carousel -> BS Thread | Expandir a hilo | 3-5 posts | Link al final |
-| BS Post -> LI Post | Expandir | Texto completo | Charlamos? |
+| LI Post -> Blog | Expandir | Texto largo | SEO optimizado |
+| LI Carousel -> Blog | Extraer ideas | 1500-3000 palabras | Link en bio |
 | Blog -> LI Carousel | Extraer ideas | 7-10 slides | Link en bio |
 
 ---

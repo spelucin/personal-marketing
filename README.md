@@ -15,7 +15,6 @@ spelucin.mkt/
 │   │   ├── linkedin-carousel/    # Generar carousels HTML -> PDF
 │   │   ├── linkedin-banner/      # Generar banners HTML -> JPG
 │   │   ├── linkedin-article/     # Generar artículos LinkedIn (copy + cover)
-│   │   ├── social-asset/         # Assets genericos (Bluesky)
 │   │   └── content-repurpose/    # Adaptar contenido entre plataformas
 │   │
 │   └── agents/                   # Agents personalizados
@@ -33,15 +32,12 @@ spelucin.mkt/
 ├── brand/                        # Brand guidelines
 │   ├── visual-identity.md        # Paleta, tipografia, texturas, logo
 │   ├── linkedin-guidelines.md    # Dimensiones, reglas LinkedIn
-│   └── bluesky-guidelines.md     # Dimensiones, reglas Bluesky
 │
 ├── templates/                    # Templates HTML base
 │   ├── linkedin/
 │   │   ├── carousel/             # Templates de carousels
 │   │   ├── banner/               # Templates de banners
 │   │   └── post-structures.md    # Estructuras de copy probadas
-│   └── bluesky/
-│       └── post/                 # Templates de posts
 │
 ├── system/                       # Sistema de generacion
 │   ├── content-pipeline.md       # Flujo de trabajo completo
@@ -56,8 +52,6 @@ spelucin.mkt/
     │   ├── banners/              # JPGs
     │   ├── covers/               # JPGs (portadas de artículos)
     │   └── posts/                # .md con frontmatter (copy)
-    └── bluesky/
-        └── posts/                # JPGs
 ```
 
 ## Uso rapido
@@ -126,9 +120,6 @@ Genera banners de LinkedIn como HTML standalone (1200x667px) para exportar a JPG
 ### linkedin-article
 Genera artículos de LinkedIn: copy en markdown (1000-2000 palabras) + cover image HTML standalone (744x400px) para exportar a JPG.
 
-### social-asset
-Genera assets para Bluesky (posts 1200x675px) como HTML standalone para exportar a JPG.
-
 ### content-repurpose
 Adapta contenido entre plataformas manteniendo la voz pero ajustando formato y longitud.
 
@@ -137,7 +128,7 @@ Adapta contenido entre plataformas manteniendo la voz pero ajustando formato y l
 ### Frontmatter de posts (.md)
 ```yaml
 ---
-platform: linkedin | bluesky
+platform: linkedin
 type: carousel | banner | post | image | article
 title: "..."
 topics: [seo-tecnico, arquitectura, analitica, ai-search]
@@ -175,7 +166,6 @@ output/[plataforma]/[tipo]/YYYY-MM-DD-[tema-slug].pdf  # o .jpg
 
 - **Sitio web**: `../spelucin.pro` (configurado como reference en opencode.json)
 - **LinkedIn**: linkedin.com/in/spelucin
-- **Bluesky**: [@spelucin.bsky.social](https://bsky.app/profile/spelucin.bsky.social)
 - **Knowledge base**: `knowledge/` (perfil, voz, topics, audiencia, productos)
 - **Brand guidelines**: `brand/` (identidad visual, guidelines por plataforma)
 

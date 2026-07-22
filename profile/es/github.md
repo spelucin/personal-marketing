@@ -33,10 +33,6 @@ spelucin.pro
 
 linkedin.com/in/spelucin
 
-## Bluesky
-
-bsky.app/profile/spelucin.bsky.social
-
 ## Trayectoria
 
 Empecé haciendo SEO técnico para retail enterprise. Gestioné el SEO de Plaza Vea, Promart, Oechsle, Real Plaza e Inkafarma en Intercorp Retail. Optimicé Ripley para CyberWow (3.7M sesiones en un día). Trabajé con Scotiabank y Yanbal en Attach Media.

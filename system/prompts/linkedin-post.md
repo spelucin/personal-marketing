@@ -105,7 +105,7 @@ Reglas:
 - Code-switching natural
 - Tono: autoridad tecnica con edge contrarian
 
-Guarda el caption en output/bluesky/posts/[fecha]-[tema-slug].md con type: post.
+Guarda el caption en output/es/linkedin/posts/[fecha]-[tema-slug].md con type: post.
 ```
 
 ---
@@ -213,7 +213,7 @@ Genera 5 ideas de contenido sobre [PILAR DE CONTENIDO] para [PLATAFORMA].
 
 Contexto:
 - Pilar: [SEO Tecnico / Analitica / Arquitectura / AI Search]
-- Plataforma: [LinkedIn / Bluesky]
+- Plataforma: LinkedIn
 - Audiencia: [Duenos de ecommerce / Ecommerce managers / Agency owners]
 - Angulo: [Provocativo / Educativo / Data-driven / Herramienta]
 
@@ -235,7 +235,7 @@ Guarda las ideas en system/content-calendar.md bajo "Banco de ideas".
 Planifica el calendario editorial para la semana [FECHA].
 
 Contexto:
-- Plataformas activas: [LinkedIn / Bluesky]
+- Plataformas activas: LinkedIn
 - Pilares a cubrir: [SEO Tecnico / Analitica / Arquitectura / AI Search]
 - Frecuencia objetivo: [X posts por semana por plataforma]
 

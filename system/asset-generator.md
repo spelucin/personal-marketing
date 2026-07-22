@@ -50,17 +50,6 @@ Este documento explica como generar assets visuales (carousels, banners, thumbna
 
 ---
 
-### Bluesky
-
-#### Post image (JPG)
-- **Dimension**: 1200 x 675 px (16:9 landscape) o 1080x1080 px (1:1)
-- **Template**: `templates/bluesky/post/`
-- **Output**: `output/bluesky/posts/`
-- **Formato**: HTML standalone -> JPG
-- **Skill**: `social-asset`
-
----
-
 ## Elementos de marca
 
 ### Colores
@@ -257,16 +246,6 @@ const puppeteer = require('puppeteer');
 - [ ] Monograma en esquina
 
 ### Cover de artículo especifico
-- [ ] Dimension: 744x400px
-- [ ] Headline legible en mobile
-- [ ] Maximo 3 lineas de título
-- [ ] Monograma en esquina inferior derecha
-- [ ] Sin avatar/foto
-
-### Post Bluesky especifico
-- [ ] Dimension: 1200x675px (landscape) o 1080x1080px (cuadrado)
-- [ ] Texto legible en mobile
-- [ ] Monograma en esquina
 
 ---
 
@@ -278,7 +257,6 @@ const puppeteer = require('puppeteer');
   - `linkedin-carousel` (carousels)
   - `linkedin-banner` (banners)
   - `linkedin-article` (cover de artículos + copy markdown)
-  - `social-asset` (posts)
 
 ### Para generar copy
 - **Agent**: `content-writer`
@@ -293,5 +271,4 @@ const puppeteer = require('puppeteer');
 
 - `brand/visual-identity.md` - Paleta, tipografia, texturas
 - `brand/linkedin-guidelines.md` - Dimensiones y reglas LinkedIn
-- `brand/bluesky-guidelines.md` - Dimensiones y reglas Bluesky
 - `templates/` - Templates HTML base por tipo de asset

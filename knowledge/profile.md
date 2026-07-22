@@ -42,7 +42,6 @@ Screaming Frog SEO Spider, Google Search Console, Ahrefs, Semrush, PageSpeed Ins
 
 - Email: alex@spelucin.pro
 - LinkedIn: linkedin.com/in/spelucin
-- Bluesky: bsky.app/profile/spelucin.bsky.social
 - GitHub: github.com/spelucin
 - Web: spelucin.pro
 

@@ -12,14 +12,12 @@ Crear archivos HTML standalone para:
 - Carousels de LinkedIn (-> PDF)
 - Banners de LinkedIn (-> JPG)
 - Covers de artículos de LinkedIn (-> JPG)
-- Posts de Bluesky (-> JPG)
 
 ## Antes de generar
 
 1. Lee `brand/visual-identity.md` - Paleta, tipografia, texturas
 2. Lee la guideline de la plataforma:
    - `brand/linkedin-guidelines.md`
-   - `brand/bluesky-guidelines.md`
 3. Si necesitas el copy, lee el archivo .md correspondiente en `output/`
 
 ## Reglas de diseno fundamentales
@@ -62,8 +60,6 @@ background: linear-gradient(135deg, #f4fdff 0%, #eaf6ff 100%);
 | Carousel slide | 1080 x 1080 px | 1:1 | PDF |
 | Banner LI | 1200 x 667 px | 1.8:1 | JPG |
 | Cover article LI | 744 x 400 px | 1.86:1 | JPG |
-| Post BS (landscape) | 1200 x 675 px | 16:9 | JPG |
-| Post BS (cuadrado) | 1080 x 1080 px | 1:1 | JPG |
 
 ## Estructura HTML base
 
@@ -131,12 +127,6 @@ background: linear-gradient(135deg, #f4fdff 0%, #eaf6ff 100%);
 - Contraste alto
 - Foto de Alex opcional (1/3 del frame)
 
-### Post Bluesky (1200x675 o 1080x1080)
-- Titulo: 48-56px, weight 700
-- Subtitulo: 28-32px, weight 500
-- Body: 22-26px, weight 400
-- Monograma en esquina
-
 ### Cover de artículo (744x400)
 - Eyebrow: 14-16px, weight 500, uppercase, tracking 0.18em
 - Titulo: 36-44px, weight 700, letter-spacing -0.02em
@@ -150,7 +140,6 @@ Guarda el HTML en:
 - `output/linkedin/carousels/[nombre].html`
 - `output/linkedin/banners/[nombre].html`
 - `output/linkedin/covers/[nombre].html`
-- `output/bluesky/posts/[nombre].html`
 
 ## Checklist antes de entregar
 - [ ] HTML standalone (sin dependencias excepto Google Fonts)
