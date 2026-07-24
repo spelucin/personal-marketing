@@ -759,9 +759,12 @@ body {
 }
 
 /* ============================================
-   21. AUTHOR BAR (avatar + name)
+   21. AUTHOR BAR (avatar + name + role)
    ============================================ */
 .author-bar {
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -773,13 +776,27 @@ body {
   object-fit: cover;
   flex-shrink: 0;
 }
+.author-bar-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 .author-bar-name {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+.author-bar-role {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
 }
 .author-bar-name-dark { color: var(--dark-accent-dim); }
-.author-bar-name-light { color: rgba(21, 96, 189, 0.45); }
+.author-bar-name-light { color: rgba(21, 96, 189, 0.55); }
+.author-bar-role-dark { color: rgba(96, 165, 250, 0.35); }
+.author-bar-role-light { color: rgba(21, 96, 189, 0.35); }
 
 /* ============================================
    MONOGRAM SVG (reusable)

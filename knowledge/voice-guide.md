@@ -212,6 +212,7 @@ Menciona herramientas por nombre con frecuencia:
 
 ## Anti-patrones (NO hacer)
 
+- **Voseo o español argentino**: Nunca usar "vos", "usás", "escribís", "entendés", "podés", "tenés", "sabés", "copiá", "conectá", "mirá", "che", "pibe", "laburo". Alex es peruano. Usar siempre "tú" o formas neutras hispanoamericanas.
 - Posts motivacionales vacios
 - "Aprendi X en Y anos" (formato cliché)
 - Traducir terminos tecnicos al espanol

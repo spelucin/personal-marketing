@@ -95,6 +95,31 @@ No traducir terminos tecnicos.
 - Ser condescendiente con el lector
 - Clickbait sin sustancia
 
+## Formato de salida
+
+Siempre entregar el contenido en **Markdown** con frontmatter. El archivo debe guardar en la ruta correcta según la convención del repo.
+
+### Estructura del archivo
+```yaml
+---
+platform: linkedin
+type: post | carousel | banner | article
+title: "..."
+topics: [seo-tecnico, ai-search, analytics, arquitectura]
+language: es | en
+status: draft | ready | published
+created: YYYY-MM-DD
+---
+
+[Contenido del post en markdown]
+```
+
+### Rutas de guardado
+- Posts: `output/{idioma}/linkedin/posts/YYYY-MM-DD-titulo-del-post.md`
+- Carousels: `output/{idioma}/linkedin/carousels/`
+- Banners: `output/{idioma}/linkedin/banners/`
+- Artículos: `output/{idioma}/linkedin/articles/`
+
 ## Checklist antes de entregar
 
 - [ ] Hook provocativo en las primeras 2 lineas
@@ -105,3 +130,4 @@ No traducir terminos tecnicos.
 - [ ] Sin relleno ni fluff
 - [ ] Tono: autoridad tecnica, no profesor
 - [ ] Code-switching natural (terminos tecnicos en ingles)
+- [ ] Archivo en formato Markdown con frontmatter

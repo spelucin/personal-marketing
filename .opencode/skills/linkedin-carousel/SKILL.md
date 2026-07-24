@@ -5,14 +5,16 @@ description: Use when generating LinkedIn carousel assets. Creates standalone HT
 
 # LinkedIn Carousel Skill
 
-Genera carousels de LinkedIn como HTML standalone que se exportan a PDF.
+Genera carousels de LinkedIn como HTML standalone que se exportan a PDF. **Siempre incluye un post companion** de LinkedIn que acompaña al carousel (el post es el hook que lleva a la gente a hacer swipe).
 
 ## Antes de generar
 
 1. Lee `brand/visual-identity.md` para paleta, tipografía y texturas
 2. Lee `brand/linkedin-guidelines.md` para dimensiones y reglas de carousel
-3. Lee `knowledge/voice-guide.md` si necesitas generar el copy del carousel
+3. Lee `knowledge/voice-guide.md` para generar el copy del carousel Y el post companion
 4. Revisa `templates/linkedin/carousel/` para ver si hay un template que encaje
+
+> **IMPORTANTE**: Todo carousel DEBE ir acompañado de un post de LinkedIn. Ver sección "Post companion" más abajo.
 
 ## Sistema de templates
 
@@ -236,6 +238,61 @@ const path = require('path');
 | Steps | `.step-number`, `.step-title`, `.step-desc` | Tutorial paso a paso |
 | Tips | `.tip-card`, `.tip-title`, `.tip-desc` | Listicle tips |
 
+## Post companion (OBLIGATORIO)
+
+**Siempre** generar un post de LinkedIn que acompañe al carousel. El carousel sin post es contenido incompleto — en LinkedIn, el post es el hook que lleva a la gente a hacer swipe.
+
+### Estructura del post companion
+
+El post debe:
+1. Hablar en la voz de Alex (`spelucin-voice`)
+2. Resumir la idea principal del carousel en texto plano
+3. Incluir un hook que enganche y haga querer ver el carousel
+4. Tener CTA claro: "Desliza para ver el paso a paso" / "Guarda el carousel" / "El detalle está en las slides"
+5. Seguir las reglas de formato del voice guide (parrafos cortos, code-switching, max 2 hashtags)
+
+### Formato del post
+
+```markdown
+---
+platform: linkedin
+type: post
+title: "[Título del carousel]"
+topics: [mismos topics del carousel]
+language: [mismo idioma del carousel]
+status: ready
+created: YYYY-MM-DD
+---
+
+[Hook provocativo - 1-2 lineas]
+
+[Contexto breve del problema]
+
+[Insight principal del carousel en texto]
+
+[CTA: "Desliza para ver el detalle" / "Guarda el carousel"]
+
+#hashtag1 #hashtag2
+```
+
+### Ruta de guardado
+
+El post companion se guarda junto al carousel:
+- `output/{lang}/linkedin/posts/{date}-{slug}-companion.md`
+
+Donde `{slug}` es el mismo slug del carousel HTML.
+
+### Checklist del post companion
+
+- [ ] Hook provocativo en las primeras 2 lineas
+- [ ] Resumen claro de qué trata el carousel
+- [ ] CTA que invita a hacer swipe/deslizar
+- [ ] Parrafos cortos (1-3 oraciones)
+- [ ] Code-switching natural
+- [ ] Maximo 2 hashtags
+- [ ] Mismo idioma que el carousel
+- [ ] Mismos topics que el carousel
+
 ## Checklist antes de entregar
 
 - [ ] HTML standalone (sin dependencias externas excepto Google Fonts)
@@ -250,3 +307,6 @@ const path = require('path');
 - [ ] Slide final: CTA + author-bar + monograma grande
 - [ ] Legible en mobile (texto grande, 4:5 maximiza espacio vertical)
 - [ ] Mucho espacio en blanco, no clutter
+- [ ] **Post companion generado** en `output/{lang}/linkedin/posts/`
+- [ ] Post tiene hook provocativo + CTA a deslizar el carousel
+- [ ] Post en la voz de Alex (spelucin-voice)
